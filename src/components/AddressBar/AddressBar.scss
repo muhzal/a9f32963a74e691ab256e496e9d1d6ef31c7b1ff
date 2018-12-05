@@ -18,7 +18,6 @@
         display: flex;
         flex-direction: row;
         flex-wrap: nowrap;
-        justify-content: flex-start;
         align-items: center;
 
         .address {
@@ -31,8 +30,10 @@
             flex-wrap: nowrap;
             justify-content: flex-start;
             align-items: center;
+            span {
+                width: calc(100% - 23px);
+            }
         }
-
         .chevron {
             margin-right: 10px;
         }
