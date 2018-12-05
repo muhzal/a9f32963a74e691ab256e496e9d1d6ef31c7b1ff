@@ -1,0 +1,53 @@
+.tab-button {
+    text-align: center;
+    color: #FFF;
+    background-color: #4a4a4a;
+    height: 50px;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: baseline;
+    font-size: 12pt;
+    position: relative;
+
+    &:focus {
+        outline: none;
+    }
+
+    &:first-child {
+        border-top-left-radius: 4px;
+        border-bottom-left-radius: 4px;
+    }
+
+    &:last-child {
+        border-top-right-radius: 4px;
+        border-bottom-right-radius: 4px;
+    }
+
+    &:not(:last-child) {
+        margin-right: 2px;
+    }
+
+    &.active {
+        background-color: #fd4f5d;
+
+        &:before {
+            content: '';
+            position: absolute;
+            border: 10px solid transparent;
+            border-bottom: 0;
+            border-top-color: #fd4f5d;
+            position: absolute;
+            left: 50%;
+            bottom: 1px;
+            transform: translate(-50%, 100%);
+        }
+    }
+
+    .icon {
+        margin-right: 5px;
+    }
+}

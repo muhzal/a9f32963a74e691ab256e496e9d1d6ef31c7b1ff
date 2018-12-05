@@ -14,7 +14,7 @@ class AddressBar extends React.Component {
   }
 
   componentDidMount() {
-    this.setState({ addressBarTop: this.addressRef.offsetTop });
+    this.setState({ addressBarTop: this.addressRef.offsetTop - 10 });
     window.addEventListener('scroll', this.handleScroll);
   }
 
